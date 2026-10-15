@@ -241,6 +241,46 @@
   .gp-band.main{background:var(--teal);color:#fff;}
   .gp-band.trans{background:#e6ebf1;color:var(--muted);}
   .lg-main::before{background:#d5f5ef!important;box-shadow:inset 0 -3px 0 var(--teal);}
+  .forsok{border:2px solid var(--orange);border-radius:16px;background:#fffaf6;overflow:hidden;}
+  .forsok-head{background:linear-gradient(135deg,var(--orange),#f07a49);color:#fff;padding:18px 28px;}
+  .forsok-head h2{font-size:2rem;line-height:1.1;}
+  .forsok-head p{font-size:.95rem;opacity:.95;}
+  .forsok-body{padding:26px 28px;}
+  @media(max-width:600px){.forsok-body{padding:20px 16px;}.forsok-head{padding:16px;}}
+  .f-step{background:#fff;border:1px solid #f3d6c6;border-radius:14px;padding:22px;margin-bottom:18px;}
+  .f-step h3{color:var(--navy);font-size:1.4rem;margin-bottom:6px;display:flex;align-items:center;gap:10px;}
+  .f-num{background:var(--orange);color:#fff;width:30px;height:30px;min-width:30px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:.9rem;}
+  .f-step p{margin-bottom:10px;}
+  .wonder{background:#fff3ea;border-left:4px solid var(--orange);border-radius:0 10px 10px 0;padding:14px 18px;margin:10px 0 14px;font-size:1.02rem;color:var(--navy);font-weight:500;}
+  .hyp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:10px;}
+  .hyp{display:flex;gap:12px;align-items:flex-start;text-align:left;border:2px solid var(--border);background:#fff;border-radius:12px;padding:12px 14px;cursor:pointer;font-family:'Inter',sans-serif;font-size:.92rem;color:var(--text);transition:.15s;}
+  .hyp:hover{border-color:var(--orange);}
+  .hyp .who{font-size:1.6rem;line-height:1;}
+  .hyp b{display:block;color:var(--navy);margin-bottom:2px;}
+  .hyp.on{border-color:var(--orange);background:#fff3ea;box-shadow:0 0 0 2px var(--orange);}
+  .f-two{display:grid;grid-template-columns:1fr 1.4fr;gap:18px;}
+  @media(max-width:700px){.f-two{grid-template-columns:1fr;}}
+  .f-two ul,.f-two ol{padding-left:20px;font-size:.93rem;}
+  .f-two li{margin-bottom:5px;}
+  .safety{background:#fdeceb;border:1px solid #f6c3be;border-radius:10px;padding:10px 14px;font-size:.9rem;margin-top:12px;color:#8a2a1b;}
+  .drag-stage{background:radial-gradient(circle at center,#16305a 0%,var(--navy) 75%);border-radius:14px;padding:6px;margin-top:12px;touch-action:none;user-select:none;}
+  .drag-stage svg{width:100%;height:auto;display:block;}
+  .drag-stage .de{cursor:grab;}
+  .drag-stage .de.dragging{cursor:grabbing;}
+  .drag-stage .de:hover circle{stroke:#fff;}
+  .result-fig{background:#fff;border:1px solid var(--border);border-radius:14px;padding:10px;margin-top:12px;}
+  .result-fig svg{width:100%;height:auto;display:block;}
+  .hyp-back{background:#f0fbfa;border:1px solid #bfeee6;border-radius:10px;padding:12px 16px;margin-top:12px;font-size:.93rem;}
+  .equation{font-family:'Barlow Condensed',sans-serif;font-size:1.7rem;font-weight:700;color:var(--navy);text-align:center;margin:10px 0 4px;}
+  .equation small{display:block;font-family:'Inter',sans-serif;font-size:.8rem;font-weight:500;color:var(--muted);}
+  .f-field{margin-top:12px;}
+  .f-field label{display:block;font-weight:600;color:var(--navy);font-size:.92rem;margin-bottom:4px;}
+  .f-field textarea{width:100%;min-height:70px;border:1px solid #f3d6c6;border-radius:10px;padding:10px 12px;font-family:'Inter',sans-serif;font-size:.93rem;resize:vertical;background:#fff;}
+  .f-field textarea:focus,.f-field input:focus{outline:2px solid var(--orange);border-color:var(--orange);}
+  .weigh{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end;margin-top:12px;}
+  .weigh div{display:flex;flex-direction:column;gap:4px;font-weight:600;color:var(--navy);font-size:.88rem;}
+  .weigh input{width:130px;border:1px solid #f3d6c6;border-radius:8px;padding:8px 10px;font-family:'Inter',sans-serif;font-size:.95rem;}
+  .weigh .diff{font-weight:700;color:var(--orange);padding-bottom:8px;}
   .quiz-q{font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:700;color:var(--navy);line-height:1.1;}
   .quiz-hint{color:var(--muted);font-size:.9rem;margin-bottom:12px;}
   .opt-row{display:flex;flex-wrap:wrap;gap:10px;}
@@ -371,7 +411,7 @@
   <div class="container">
     <div class="progress-label"><span>Din fremdrift</span><span id="progressPct">0%</span></div>
     <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
-    <nav class="jump"><a href="#ressurser">Ressurser</a><a href="#teori">Teori</a><a href="#spill">🎮 Spill</a><a href="#oversikt">Oversikt</a><a href="#kompendium">Kompendium</a><a href="#oppgaver">Oppgaver</a><a href="#kilder">Kilder</a><a href="#pdf">PDF</a></nav>
+    <nav class="jump"><a href="#ressurser">Ressurser</a><a href="#teori">Teori</a><a href="#forsok">🔥 Forsøk</a><a href="#spill">🎮 Spill</a><a href="#oversikt">Oversikt</a><a href="#kompendium">Kompendium</a><a href="#oppgaver">Oppgaver</a><a href="#kilder">Kilder</a><a href="#pdf">PDF</a></nav>
   </div>
 </div>
 
@@ -518,6 +558,59 @@
 </section>
 
 <!-- ================= SPILL ================= -->
+<section class="container reveal" id="forsok">
+  <div class="forsok">
+    <div class="forsok-head"><h2>🔥 Forsøk</h2><p>Forbrenning av magnesium: Hva skjer når magnesium binder seg til oksygen?</p></div>
+    <div class="forsok-body">
+
+      <div class="f-step">
+        <h3><span class="f-num">1</span> Undre deg</h3>
+        <div class="wonder">Læreren holder en liten bit magnesium inn i en flamme. Magnesiumet brenner med et kraftig, hvitt lys, og igjen ligger et hvitt pulver.<br><b>Blir det hvite pulveret tyngre, lettere eller like tungt som magnesiumbiten var før forsøket?</b></div>
+        <p style="font-size:.92rem;color:var(--muted);">Tenk selv først. Snakk så med sidemannen om hvem du er mest enig med, og hvorfor. Trykk på den hypotesen du har.</p>
+        <div class="hyp-grid" id="hypGrid">
+          <button class="hyp" data-h="lettere"><span class="who">🧑</span><span><b>«Det blir lettere.»</b>Noe av magnesiumet brenner opp og forsvinner som røyk.</span></button>
+          <button class="hyp" data-h="likt"><span class="who">👩</span><span><b>«Det veier det samme.»</b>Det er det samme magnesiumet, det har bare endret farge.</span></button>
+          <button class="hyp" data-h="tyngre"><span class="who">🧔</span><span><b>«Det blir tyngre.»</b>Magnesiumet tar opp noe fra lufta mens det brenner.</span></button>
+          <button class="hyp" data-h="borte"><span class="who">👧</span><span><b>«Det blir nesten helt borte.»</b>Det som brenner, blir til varme og lys.</span></button>
+        </div>
+        <p class="game-msg" id="hypMsg" style="margin-top:10px;"></p>
+        <div class="f-field"><label for="fHvorfor">Hvorfor tror du dette? Hva sa sidemannen din?</label><textarea class="f-note" id="fHvorfor" data-label="Hvorfor tror du dette? Hva sa sidemannen din?" placeholder="Skriv begrunnelsen din her ..."></textarea></div>
+      </div>
+
+      <div class="f-step">
+        <h3><span class="f-num">2</span> Forsøket</h3>
+        <div class="f-two">
+          <div><b>Utstyr</b><ul><li>Magnesiumbånd (eventuelt stålull)</li><li>Pinsett</li><li>Gassbrenner</li><li>Vekt (gjerne skålvekt)</li></ul></div>
+          <div><b>Fremgangsmåte</b><ol><li>Vei magnesiumbiten før forsøket.</li><li>Hold magnesiumet med pinsetten inn i flammen på gassbrenneren.</li><li>Se hva som skjer, men ikke se rett på flammen.</li><li>Vei det hvite pulveret etterpå. Har vekten endret seg?</li></ol></div>
+        </div>
+        <div class="safety">⚠️ <b>Sikkerhet:</b> Ikke se direkte på flammen. Lyset fra brennende magnesium er så sterkt at det kan skade synet.</div>
+        <div class="weigh"><div>Masse før (g)<input type="number" step="0.01" id="mFor" inputmode="decimal"></div><div>Masse etter (g)<input type="number" step="0.01" id="mEtter" inputmode="decimal"></div><span class="diff" id="mDiff"></span></div>
+        <p style="margin-top:14px;font-size:.93rem;"><b>Diskuter med gruppa, og skriv ned det dere kommer fram til:</b></p>
+        <div class="f-field"><label for="fObs">1. Hva observerte dere da magnesiumet brant?</label><textarea class="f-note" id="fObs" data-label="1. Hva observerte dere da magnesiumet brant?" placeholder="Lys, farge, lyd, hva ble igjen ..."></textarea></div><div class="f-field"><label for="fBorte">2. Kan noe bli helt borte når det brenner? Forklar.</label><textarea class="f-note" id="fBorte" data-label="2. Kan noe bli helt borte når det brenner? Forklar." placeholder="Skriv her ..."></textarea></div><div class="f-field"><label for="fVed">3. Hva skjer når vi brenner ved, og hvorfor er det vanskelig å veie det som blir dannet da?</label><textarea class="f-note" id="fVed" data-label="3. Hva skjer når vi brenner ved, og hvorfor er det vanskelig å veie det som blir dannet da?" placeholder="Skriv her ..."></textarea></div><div class="f-field"><label for="fGull">4. Hvilket metall vil dere anbefale en gullsmed å bruke til smykker, og hvorfor?</label><textarea class="f-note" id="fGull" data-label="4. Hvilket metall vil dere anbefale en gullsmed å bruke til smykker, og hvorfor?" placeholder="Tenk på hvilke metaller som reagerer lett med oksygen ..."></textarea></div>
+      </div>
+
+      <div class="f-step">
+        <h3><span class="f-num">3</span> Prøv selv: Flytt elektronene</h3>
+        <p>Her er et magnesiumatom (12 protoner) og et oksygenatom (8 protoner). Når magnesium brenner, reagerer det med oksygen fra lufta. Hva tror du skjer med ytterelektronene?</p>
+        <div class="howto" style="margin:8px 0 0;"><b>Slik gjør du:</b> Dra de oransje og blå ytterelektronene med musa eller fingeren. Slipp dem på skallet til det atomet du tror de havner hos. Når du tror begge atomene har det slik de «ønsker», trykker du <b>«Lever svar»</b>.</div>
+        <div class="drag-stage"><svg id="dragSvg" viewBox="0 0 700 330" role="img" aria-label="Magnesiumatom og oksygenatom der ytterelektronene kan flyttes"></svg></div>
+        <div class="btn-row"><button class="check-btn" onclick="dragSubmit()">✓ Lever svar</button><button class="ghost-btn" onclick="dragReset()">↺ Start på nytt</button></div>
+        <div class="game-msg" id="dragMsg"></div>
+      </div>
+
+      <div class="f-step" id="forklaring" style="display:none;">
+        <h3><span class="f-num">4</span> Hva skjer?</h3>
+        <div class="result-fig"><svg id="resultSvg" viewBox="0 0 700 300" role="img" aria-label="Magnesium gir to elektroner til oksygen, og det dannes Mg2+ og O2- som tiltrekker hverandre"></svg></div>
+        <div class="equation">2 Mg + O₂ → 2 MgO<small>magnesium + oksygen → magnesiumoksid</small></div>
+        <p><b>Magnesium</b> har 2 ytterelektroner og <b>gir dem bort</b>. Da blir det et Mg²⁺-ion med elektronfordeling 2, 8, som neon. <b>Oksygen</b> har 6 ytterelektroner og <b>tar imot de 2</b>. Da blir det et O²⁻-ion med elektronfordeling 2, 8, også som neon. Begge har nå 8 i ytterste skall, og plussionet og minusionet tiltrekker hverandre med <b>ionebinding</b>. Det hvite pulveret er saltet <b>magnesiumoksid</b>.</p>
+        <p><b>Hvorfor blir det tyngre?</b> Alle magnesiumatomene er der fortsatt, men hvert av dem har bundet seg til et oksygenatom fra lufta. Til sammen veier det mer enn magnesiumet alene. Når vi brenner ved, dannes det mest karbondioksid. Det er en gass som forsvinner ut i lufta, og derfor er den vanskelig å veie.</p>
+        <div class="hyp-back" id="hypBack"></div>
+        <div class="f-field"><label for="fRefl">Hva lærte du av forsøket? Var det noe som overrasket deg?</label><textarea class="f-note" id="fRefl" data-label="Hva lærte du av forsøket? Var det noe som overrasket deg?" placeholder="Skriv refleksjonen din her ..."></textarea></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="container reveal" id="spill">
   <h2 class="section-title">🎮 Spill</h2>
   <p class="section-sub">Test det du har lært. Les «Slik spiller du» før du starter.</p>
@@ -1004,6 +1097,109 @@ function pairGo(){
 }
 pairUI();pairDraw();
 
+
+/* ===== FORSØK: forbrenning av magnesium ===== */
+const HYP={lettere:'«Det blir lettere»',likt:'«Det veier det samme»',tyngre:'«Det blir tyngre»',borte:'«Det blir nesten helt borte»'};
+let hypothesis=null,dragSolved=false,dragTries=0;
+document.querySelectorAll('#hypGrid .hyp').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#hypGrid .hyp').forEach(x=>x.classList.remove('on'));b.classList.add('on');hypothesis=b.dataset.h;
+  const m=document.getElementById('hypMsg');m.innerHTML=`Din hypotese: <b>${HYP[hypothesis]}</b>. Se forsøket, og sjekk om du hadde rett.`;m.className='game-msg';m.style.color='var(--navy)';
+  if(dragSolved)showHypBack();
+}));
+// atomgeometri
+const DA={Mg:{x:200,y:165,z:12,inner:[2,8],R:[34,62,92]},O:{x:500,y:165,z:8,inner:[2],R:[34,64]}};
+const DS8=[0,1,2,3,4,5,6,7].map(k=>-Math.PI/2+(k%4)*Math.PI/2+(k>=4?0.27:-0.27));
+let dEls=[]; // {id,color,owner}
+function dragReset(){
+  dEls=[];for(let k=0;k<2;k++)dEls.push({id:'m'+k,color:'#F5A623',owner:'Mg'});
+  for(let k=0;k<6;k++)dEls.push({id:'o'+k,color:'#22A7E0',owner:'O'});
+  dragSolved=false;document.getElementById('dragMsg').textContent='';document.getElementById('dragMsg').className='game-msg';
+  document.getElementById('forklaring').style.display='none';dragDraw();
+}
+function outerR(a){return DA[a].R[DA[a].R.length-1];}
+function dragLayout(){
+  const pos={};['Mg','O'].forEach(a=>{const list=dEls.filter(e=>e.owner===a),n=list.length,R=outerR(a);
+    list.forEach((e,k)=>{let ang;if(n<=4)ang=-Math.PI/2+k*Math.PI/2;else ang=DS8[k<4?k:k];
+      if(n>4){const pos4=k%4,paired=pos4<n-4;ang=-Math.PI/2+pos4*Math.PI/2+(paired?(k<4?-0.27:0.27):0);}
+      pos[e.id]=[DA[a].x+R*Math.cos(ang),DA[a].y+R*Math.sin(ang)];});});
+  return pos;
+}
+function dragDraw(){
+  const svg=document.getElementById('dragSvg');let s='';
+  ['Mg','O'].forEach(a=>{const A=DA[a],n=dEls.filter(e=>e.owner===a).length;
+    A.R.forEach((r,i)=>{const outer=i===A.R.length-1;s+=`<circle cx="${A.x}" cy="${A.y}" r="${r}" fill="none" stroke="#fff" stroke-width="${outer?3:2}" ${outer&&n===0?'stroke-dasharray="6 6" opacity=".35"':'opacity=".85"'}/>`;});
+    // indre elektroner
+    A.inner.forEach((c,i)=>{for(let k=0;k<c;k++){const ang=i===0?Math.PI*k:-Math.PI/2+(k%4)*Math.PI/2+(c>4&&k%4<c-4?(k<4?-0.25:0.25):0);
+      s+=`<circle cx="${(A.x+A.R[i]*Math.cos(ang)).toFixed(1)}" cy="${(A.y+A.R[i]*Math.sin(ang)).toFixed(1)}" r="7" fill="#7f8ea3" stroke="#0B1F3A" stroke-width="1.5"/>`;}});
+    const ch=a==='Mg'?(2-n):(6-n);const lab=a+(ch===0?'':((Math.abs(ch)>1?(Math.abs(ch)===2?'²':Math.abs(ch)):'')+(ch>0?'⁺':'⁻')));
+    s+=`<circle cx="${A.x}" cy="${A.y}" r="22" fill="#E0245E"/><text x="${A.x}" y="${A.y+5}" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="Inter,sans-serif">${A.z}+</text>`;
+    s+=`<text x="${A.x}" y="${A.y+outerR(a)+42}" text-anchor="middle" font-size="18" font-weight="700" fill="#fff" font-family="Barlow Condensed,Inter,sans-serif">${lab}</text><text x="${A.x}" y="${A.y+outerR(a)+60}" text-anchor="middle" font-size="12" fill="#9db0c8" font-family="Inter,sans-serif">${n} ytterelektron${n===1?'':'er'}</text>`;
+  });
+  const pos=dragLayout();
+  dEls.forEach(e=>{const [x,y]=pos[e.id];s+=`<g class="de" data-id="${e.id}"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="11" fill="${e.color}" stroke="#0B1F3A" stroke-width="2"/><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="22" fill="transparent"/></g>`;});
+  s+=`<text x="350" y="24" text-anchor="middle" font-size="12" fill="#9db0c8" font-family="Inter,sans-serif">Grå = indre elektroner (står fast) · Oransje = magnesiums ytterelektroner · Blå = oksygens ytterelektroner</text>`;
+  svg.innerHTML=s;
+}
+(function(){
+  const svg=document.getElementById('dragSvg');let drag=null;
+  const pt=ev=>{const p=svg.createSVGPoint();p.x=ev.clientX;p.y=ev.clientY;return p.matrixTransform(svg.getScreenCTM().inverse());};
+  svg.addEventListener('pointerdown',ev=>{const g=ev.target.closest('.de');if(!g||dragSolved)return;ev.preventDefault();
+    drag={id:g.dataset.id,g};g.classList.add('dragging');svg.setPointerCapture(ev.pointerId);svg.appendChild(g);});
+  svg.addEventListener('pointermove',ev=>{if(!drag)return;const p=pt(ev);drag.g.querySelectorAll('circle').forEach(c=>{c.setAttribute('cx',p.x);c.setAttribute('cy',p.y);});});
+  const end=ev=>{if(!drag)return;const p=pt(ev),e=dEls.find(x=>x.id===drag.id);
+    let best=null,bd=1e9;['Mg','O'].forEach(a=>{const d=Math.hypot(p.x-DA[a].x,p.y-DA[a].y);if(d<outerR(a)+55&&d<bd){bd=d;best=a;}});
+    if(best&&best!==e.owner){if(dEls.filter(x=>x.owner===best).length>=8){const m=document.getElementById('dragMsg');m.textContent='Det ytterste skallet har ikke plass til mer enn 8 elektroner.';m.className='game-msg no';}else e.owner=best;}
+    drag=null;dragDraw();};
+  svg.addEventListener('pointerup',end);svg.addEventListener('pointercancel',end);
+})();
+function dragSubmit(){
+  const nM=dEls.filter(e=>e.owner==='Mg').length,nO=dEls.filter(e=>e.owner==='O').length,m=document.getElementById('dragMsg');dragTries++;
+  if(nM===0&&nO===8){dragSolved=true;m.innerHTML='<b>Riktig!</b> Magnesium har gitt bort begge ytterelektronene sine, og oksygen har fått 8. Se forklaringen under.';m.className='game-msg ok';
+    document.getElementById('forklaring').style.display='block';drawResult();showHypBack();
+    document.getElementById('forklaring').scrollIntoView({behavior:'smooth',block:'nearest'});return;}
+  let t;
+  if(nM===2&&nO===6)t='Du har ikke flyttet noen elektroner ennå. Hva «ønsker» atomene i det ytterste skallet sitt?';
+  else if(nM>2)t=`Nå har magnesium ${nM} ytterelektroner og oksygen bare ${nO}. Hvem er det lettest for: å gi bort 2, eller å gi bort 6?`;
+  else if(nM===1)t='Nesten! Magnesium har fortsatt 1 ytterelektron igjen, og oksygen har 7. Hvor mange trenger oksygen for å få 8?';
+  else t='Prøv igjen. Tell ytterelektronene: hvor mange trenger hvert atom for å få fullt ytterste skall?';
+  m.textContent=t;m.className='game-msg no';
+}
+function drawResult(){
+  const ring=(x,y,r,o)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="#0B1F3A" stroke-width="2" opacity="${o||.8}"/>`;
+  const el=(x,y,c)=>`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="7" fill="${c}" stroke="#0B1F3A" stroke-width="1.5"/>`;
+  const shell=(x,y,r,cols)=>{let s='';const n=cols.length;cols.forEach((c,k)=>{let ang=n<=2?Math.PI*k-Math.PI/2*0:-Math.PI/2+(k%4)*Math.PI/2+(n>4&&k%4<n-4?(k<4?-0.27:0.27):0);if(n<=2)ang=Math.PI*k;s+=el(x+r*Math.cos(ang),y+r*Math.sin(ang),c);});return s;};
+  const nuc=(x,y,t)=>`<circle cx="${x}" cy="${y}" r="17" fill="#E0245E"/><text x="${x}" y="${y+5}" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="Inter,sans-serif">${t}</text>`;
+  const txt=(x,y,t,sz,c,w)=>`<text x="${x}" y="${y}" text-anchor="middle" font-size="${sz||14}" font-weight="${w||700}" fill="${c||'#0B1F3A'}" font-family="Inter,sans-serif">${t}</text>`;
+  const G='#7f8ea3',OR='#F5A623',BL='#22A7E0';
+  let s='';
+  // Før
+  s+=txt(175,24,'Før: atomer',14,'#5c6b7a');
+  s+=ring(90,130,28)+ring(90,130,50)+ring(90,130,72)+shell(90,130,28,[G,G])+shell(90,130,50,Array(8).fill(G))+shell(90,130,72,[OR,OR])+nuc(90,130,'12+')+txt(90,230,'Mg')+txt(90,248,'2, 8, 2',12,'#5c6b7a',500);
+  s+=ring(260,130,28)+ring(260,130,52)+shell(260,130,28,[G,G])+shell(260,130,52,Array(6).fill(BL))+nuc(260,130,'8+')+txt(260,230,'O')+txt(260,248,'2, 6',12,'#5c6b7a',500);
+  s+=`<path d="M118 70 Q175 20 232 74" fill="none" stroke="#E85D26" stroke-width="2.5" stroke-dasharray="5 4" marker-end="url(#ah)"/>`+txt(175,48,'2 e⁻',13,'#E85D26');
+  s+=`<defs><marker id="ah" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#E85D26"/></marker><marker id="ah2" markerWidth="10" markerHeight="10" refX="6" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#0B1F3A"/></marker></defs>`;
+  s+=`<line x1="335" y1="135" x2="375" y2="135" stroke="#0B1F3A" stroke-width="3" marker-end="url(#ah2)"/>`;
+  // Etter
+  s+=txt(530,24,'Etter: ioner',14,'#5c6b7a');
+  s+=ring(460,130,28)+ring(460,130,50)+ring(460,130,72,.2)+shell(460,130,28,[G,G])+shell(460,130,50,Array(8).fill(G))+nuc(460,130,'12+')+txt(460,230,'Mg²⁺',16,'#0B1F3A')+txt(460,248,'2, 8',12,'#5c6b7a',500);
+  s+=ring(620,130,28)+ring(620,130,52)+shell(620,130,28,[G,G])+shell(620,130,52,[BL,BL,BL,BL,BL,BL,OR,OR])+nuc(620,130,'8+')+txt(620,230,'O²⁻',16,'#0B1F3A')+txt(620,248,'2, 8',12,'#5c6b7a',500);
+  s+=txt(540,138,'+ ⟷ −',15,'#E85D26');
+  s+=txt(540,285,'Pluss og minus tiltrekker hverandre: ionebinding',12,'#5c6b7a',500);
+  s+=txt(175,285,'Oransje = elektronene som flytter seg',12,'#5c6b7a',500);
+  document.getElementById('resultSvg').innerHTML=s;
+}
+function showHypBack(){
+  const b=document.getElementById('hypBack');
+  if(!hypothesis){b.innerHTML='Gå tilbake til <a href="#forsok" style="color:#0a9b84;font-weight:600">steg 1</a> og velg en hypotese, så kan du sammenligne.';return;}
+  b.innerHTML=hypothesis==='tyngre'?`<b>Din hypotese var ${HYP.tyngre}.</b> Det stemmer! Magnesiumet tar opp oksygen fra lufta, så magnesiumoksidet veier mer enn magnesiumbiten.`
+    :`<b>Din hypotese var ${HYP[hypothesis]}.</b> Det riktige er at det blir <b>tyngre</b>. Det er lett å tro at noe forsvinner når det brenner, men her blir oksygen fra lufta bundet til magnesiumet. Var det noe i forsøket som overrasket deg?`;
+}
+dragReset();
+
+function mDiffUpd(){const a=parseFloat(document.getElementById('mFor').value),b=parseFloat(document.getElementById('mEtter').value),d=document.getElementById('mDiff');
+  if(isNaN(a)||isNaN(b)){d.textContent='';return;}const x=b-a;d.textContent=x>0?`Økte med ${x.toFixed(2)} g`:x<0?`Minket med ${(-x).toFixed(2)} g`:'Ingen endring';}
+document.getElementById('mFor').addEventListener('input',mDiffUpd);document.getElementById('mEtter').addEventListener('input',mDiffUpd);
+
 /* ===== OPPGAVE 1: MC ===== */
 const mcQs=document.querySelectorAll('.mc-q');
 mcQs.forEach(q=>q.querySelectorAll('.mc-option').forEach(opt=>opt.addEventListener('click',()=>{
@@ -1271,6 +1467,11 @@ function exportPDF(){
 
   sub('Læringsmål');
   document.querySelectorAll('.obj-item').forEach(o=>txt((o.classList.contains('done')?'[x] ':'[ ] ')+o.textContent.trim()));
+  sub('Forsøk: Forbrenning av magnesium');
+  txt('Hypotese: '+(hypothesis?HYP[hypothesis]:'Ikke valgt'));
+  txt('Flytt elektronene: '+(dragSolved?'Løst etter '+dragTries+' forsøk':'Ikke løst'));
+  txt('Masse før: '+(document.getElementById('mFor').value||'-')+' g, masse etter: '+(document.getElementById('mEtter').value||'-')+' g. '+document.getElementById('mDiff').textContent);
+  document.querySelectorAll('.f-note').forEach(t=>{txt(t.dataset.label);txt(t.value||'Ikke besvart',12);});
   sub('Spill');
   txt('Bygg et atom: '+missionsDone+' oppdrag fullført');
   txt('Hvilken binding?: '+game.b.s+' av '+game.b.t+' riktige');
